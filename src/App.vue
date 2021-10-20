@@ -1,8 +1,9 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <router-link class="navbar-brand" to="/">Home</router-link>
   </div>
+</nav>
   <router-view/>
 </template>
 
