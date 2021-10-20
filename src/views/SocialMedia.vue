@@ -11,9 +11,10 @@
 </template>
 
 <script>
-import Form from "@/components/Form";
+import Form from "../components/Form";
+
 export default {
-name: "SocialMedia",
+  name: "SocialMedia",
   components: { Form }
 }
 </script>
