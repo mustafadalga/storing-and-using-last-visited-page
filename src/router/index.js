@@ -32,6 +32,7 @@ const routes = [
 
 const router = createRouter({
   history: createWebHashHistory(),
+  hash:false,
   routes
 })
 
@@ -41,8 +42,7 @@ let isFirstRedirect = true;
 router.beforeEach((to, from, next) => {
 
   const lastVisitedPage = localStorage.getItem('lastVisitedPage');
-  const onLastVisitedPage = lastVisitedPage == to.name;
-  const executableRedirect = (!lastVisitedPage || onLastVisitedPage || !isFirstRedirect) ? false : true;
+  const executableRedirect = (lastVisitedPage && isFirstRedirect);
 
   isFirstRedirect = false;
 
