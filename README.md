@@ -1,5 +1,7 @@
 # Storing and Using Last Visited Page
 
+
+* [Blog Post](https://insight.heybooster.ai/storing-and-using-last-visited-page-in-vue-js/)
 * [Demo](https://process-last-visited-page.netlify.app/)
 
 ## Project setup
